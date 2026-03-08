@@ -660,6 +660,67 @@ a {
   padding: 1.5rem;
 }
 
+.contact-shell {
+  grid-template-columns: minmax(0, 1.1fr) minmax(240px, 0.9fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+.contact-main {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-qr {
+  justify-self: end;
+  width: min(100%, 280px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.contact-qr__frame {
+  display: grid;
+  place-items: center;
+  padding: 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius-lg) - 2px);
+  background: #ffffff;
+}
+
+.contact-qr__frame img {
+  display: block;
+  width: min(100%, 220px);
+  height: auto;
+}
+
+.contact-qr h3 {
+  margin: 1rem 0 0.45rem;
+}
+
+.contact-qr p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.94rem;
+}
+
+.contact-qr__link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: var(--accent-deep);
+  font-weight: 600;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contact-qr__link:hover,
+.contact-qr__link:focus-visible {
+  text-decoration: underline;
+}
+
 .bullet-list li {
   position: relative;
   padding-left: 1.2rem;
@@ -753,6 +814,11 @@ a {
   .publication-sidebar,
   .timeline-shell {
     position: static;
+  }
+
+  .contact-qr {
+    justify-self: stretch;
+    width: 100%;
   }
 
   .timeline-entry {

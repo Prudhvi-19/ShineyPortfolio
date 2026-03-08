@@ -13,6 +13,7 @@ Static researcher portfolio for `Shiney Rashmitha Chandraganti`, built to stay s
 - `data/methods.json` - methods section content
 - `data/timeline.json` - reverse-chronological timeline entries
 - `data/mentorship.json` - mentorship and leadership content
+- `assets/qr/` - QR code assets for sharing the live portfolio
 - `CV_ShineyChandraganti.pdf` - public CV download
 - `Personal Statement_Shiney Chandraganti.pdf` - source personal statement
 - `Research Statement_Shiney Chandraganti.pdf` - source research statement

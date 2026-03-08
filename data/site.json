@@ -137,8 +137,8 @@
     "qr": {
       "title": "Scan to open the portfolio",
       "caption": "",
-      "image": "assets/qr/shiney-portfolio-qr.svg",
-      "fallbackImage": "assets/qr/shiney-portfolio-qr.png",
+      "image": "assets/qr/shiney-portfolio-qr.png",
+      "fallbackImage": "assets/qr/shiney-portfolio-qr.svg",
       "url": "https://Prudhvi-19.github.io/ShineyPortfolio/",
       "showUrl": false
     }
