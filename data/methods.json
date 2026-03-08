@@ -1,0 +1,45 @@
+{
+  "section": {
+    "eyebrow": "Methods",
+    "title": "Methods I work with most often",
+    "intro": "These are the methods I use most often to move from question to experiment and from experiment to evidence."
+  },
+  "groups": [
+    {
+      "title": "In vivo tumor models",
+      "items": [
+        "Orthotopic tumor implantation",
+        "Mammary fat pad implantation",
+        "Rechallenge studies",
+        "Mouse colony management and genotyping"
+      ]
+    },
+    {
+      "title": "Molecular and cellular methods",
+      "items": [
+        "CRISPR/Cas9 gene editing",
+        "Cell culture",
+        "Western blot",
+        "PCR and DNA extraction"
+      ]
+    },
+    {
+      "title": "Phenotyping and imaging",
+      "items": [
+        "14-color flow cytometry",
+        "Immunofluorescence staining",
+        "Confocal microscopy",
+        "ImageJ and Imaris analysis"
+      ]
+    },
+    {
+      "title": "Computational and translational work",
+      "items": [
+        "Virtual screening and molecular docking",
+        "ADME and pharmacokinetic analysis",
+        "Clinical study coordination",
+        "Participant recruitment and data handling"
+      ]
+    }
+  ]
+}

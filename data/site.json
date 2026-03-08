@@ -1,0 +1,156 @@
+{
+  "person": {
+    "name": "Shiney Rashmitha Chandraganti",
+    "shortName": "Shiney Chandraganti",
+    "title": "Cancer Immunology Researcher",
+    "email": "chsrashmitha29@gmail.com",
+    "location": "Ithaca, New York",
+    "worksFor": "Cornell University",
+    "department": "Department of Biomedical Sciences",
+    "alumniOf": [
+      "New York University",
+      "Motilal Nehru National Institute of Technology Allahabad"
+    ],
+    "knowsAbout": [
+      "Cancer immunology",
+      "Tumor microenvironment",
+      "CD4+ T cells",
+      "Flow cytometry",
+      "Immunofluorescence",
+      "CRISPR/Cas9",
+      "Computational analysis"
+    ]
+  },
+  "hero": {
+    "eyebrow": "Cancer Immunology \u00b7 Cornell University",
+    "headline": "I study how tumor state shapes immune response to immunotherapy.",
+    "lead": "I am a cancer immunology researcher in the Department of Biomedical Sciences at Cornell University. My current work focuses on CD4+ T-cell function, tumor plasticity, and response to immune checkpoint blockade in breast cancer.",
+    "support": "Across in vivo tumor models, CRISPR/Cas9 perturbations, multicolor flow cytometry, and immunofluorescence, I study why some tumors remain resistant and what makes them become newly responsive.",
+    "actions": [
+      {
+        "label": "Download CV",
+        "href": "CV_ShineyChandraganti.pdf",
+        "download": "Shiney-Chandraganti-CV.pdf",
+        "style": "primary"
+      },
+      {
+        "label": "View research",
+        "href": "#research",
+        "style": "secondary"
+      },
+      {
+        "label": "Email",
+        "href": "mailto:chsrashmitha29@gmail.com",
+        "style": "ghost"
+      }
+    ]
+  },
+  "currentRole": {
+    "heading": "Current role",
+    "title": "Lab Technician III",
+    "subtitle": "Department of Biomedical Sciences",
+    "items": [
+      {
+        "label": "Institution",
+        "value": "Cornell University"
+      },
+      {
+        "label": "Location",
+        "value": "Ithaca, New York"
+      },
+      {
+        "label": "Current focus",
+        "value": "Breast cancer immunology and checkpoint response"
+      }
+    ]
+  },
+  "stats": {
+    "heading": "At a glance",
+    "items": [
+      {
+        "value": "6",
+        "label": "publications and manuscripts"
+      },
+      {
+        "value": "13",
+        "label": "researchers trained across the lab"
+      },
+      {
+        "value": "210+",
+        "label": "clinical study participants supported"
+      },
+      {
+        "value": "3",
+        "label": "modes of inquiry: bench, clinical, and computational"
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "I came to cancer immunology through a longer interest in how biology changes with context.",
+    "paragraphs": [
+      "My research path has moved across microbial systems, biomaterials, computational screening, public health, and tumor immunology. What connects those experiences is a consistent interest in how biological systems respond to environmental and molecular change, and how that knowledge can be used to improve treatment.",
+      "I am especially interested in the tumor microenvironment, immune-cell behavior, and resistance to therapy. Long term, I hope to contribute to better immunotherapies and to mentor future researchers working across experimental and translational biology."
+    ],
+    "sideCards": [
+      {
+        "title": "Research interests",
+        "type": "chips",
+        "items": [
+          "CD4+ T-cell biology",
+          "Tumor microenvironment",
+          "Checkpoint blockade",
+          "Epithelial-mesenchymal plasticity",
+          "Spatial immunology",
+          "Translational cancer research"
+        ]
+      },
+      {
+        "title": "How I approach research",
+        "type": "bullets",
+        "items": [
+          "I prefer mechanistic questions over descriptive ones whenever possible.",
+          "I trust conclusions more when they are supported by orthogonal methods.",
+          "I value careful experimental design, troubleshooting, and reproducibility.",
+          "I see mentorship, lab systems, and scientific rigor as part of the same work."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "I am open to doctoral opportunities, research collaborations, and conversations in cancer immunology.",
+    "body": "If you would like to connect about my work, publications, or future research, I would be glad to hear from you.",
+    "actions": [
+      {
+        "label": "Email me",
+        "href": "mailto:chsrashmitha29@gmail.com",
+        "style": "primary"
+      },
+      {
+        "label": "Download CV",
+        "href": "CV_ShineyChandraganti.pdf",
+        "download": "Shiney-Chandraganti-CV.pdf",
+        "style": "secondary"
+      }
+    ]
+  },
+  "footer": {
+    "note": "A concise academic portfolio built for clarity."
+  },
+  "seo": {
+    "title": "Shiney Rashmitha Chandraganti | Cancer Immunology Researcher",
+    "description": "Personal portfolio of Shiney Rashmitha Chandraganti, a cancer immunology researcher focused on tumor microenvironments, immune-cell behavior, and response to immunotherapy.",
+    "themeColor": "#241630"
+  },
+  "documents": {
+    "title": "Documents",
+    "items": [
+      {
+        "label": "Curriculum Vitae",
+        "href": "CV_ShineyChandraganti.pdf",
+        "download": "Shiney-Chandraganti-CV.pdf"
+      }
+    ]
+  }
+}

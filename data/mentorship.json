@@ -1,0 +1,29 @@
+{
+  "section": {
+    "eyebrow": "Mentorship",
+    "title": "Work beyond the experiment",
+    "intro": "For me, strong research also means strong stewardship: training people, building reliable lab systems, and helping the work around me become better."
+  },
+  "cards": [
+    {
+      "eyebrow": "Mentorship",
+      "title": "Lab stewardship and training",
+      "items": [
+        "I managed mouse colonies across six breeder lines and strengthened genotyping workflows.",
+        "I built inventory and record-keeping systems that reduced supply conflicts and duplicate ordering.",
+        "I trained 7 graduate and 6 undergraduate researchers in tissue culture, immunostaining, microscopy, and flow cytometry.",
+        "I mentored trainees across microbiology, biological sciences, chemistry, nutritional sciences, and high-school research experiences."
+      ]
+    },
+    {
+      "eyebrow": "Leadership",
+      "title": "Work beyond the bench",
+      "items": [
+        "I led a four-person team in Bayer's AGORIZE Digital Campus Innovation Challenge.",
+        "I supported public-affairs and event coordination for major cultural and technical festivals at NIT Allahabad.",
+        "I built community across cultures through Bridges International at NYU and Telugu student organizations in India.",
+        "I care about fairness in healthcare access, scientific opportunity, and collaborative research culture."
+      ]
+    }
+  ]
+}

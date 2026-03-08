@@ -1,0 +1,65 @@
+{
+  "section": {
+    "eyebrow": "Publications",
+    "title": "Publications and manuscripts",
+    "intro": "I think scientific work should be communicated clearly and publicly. These are the papers and manuscripts that currently best represent my research."
+  },
+  "groups": [
+    {
+      "title": "Under review",
+      "items": [
+        {
+          "title": "CD4+ T-cells sensitize quasi-mesenchymal breast tumors lacking CD73 to anti-CTLA4 immune checkpoint blockade therapy",
+          "citation": "Chandraganti, S., Sams, C., Sahoo, S., et al. Under review at Cancer Research Communications.",
+          "link": {
+            "label": "bioRxiv preprint",
+            "href": "https://doi.org/10.1101/2025.05.12.653467"
+          }
+        },
+        {
+          "title": "Cross-species conservation of nerve- and airway-associated interstitial macrophages (NAMs) that suppress CD8+ T-cell immunity via a C1q axis in lung cancer",
+          "citation": "Bartnicki, E., Khanna, K. M., Brenier, E., et al., including Shiney Chandraganti. Under review at Immunity."
+        }
+      ]
+    },
+    {
+      "title": "Published",
+      "items": [
+        {
+          "title": "Synthesis and characterization of methyl acrylamide cellulose nanowhiskers for environmental applications",
+          "citation": "Sharma, S., Chandraganti, C. S. R., and Pandey, L. M. Letters of Applied NanoBioScience, 2020.",
+          "link": {
+            "label": "DOI",
+            "href": "https://doi.org/10.33263/LIANBS91.880884"
+          }
+        }
+      ]
+    },
+    {
+      "title": "In preparation",
+      "items": [
+        {
+          "title": "The epithelial-mesenchymal transition drives CD73-mediated cross-protection in heterogeneous breast tumors",
+          "citation": "Bakhle, K., Chandraganti, S., Nelissen, S., Li, L., Feng, B., Ramos-Villanueva, B., Miller, A., and Dongre, A."
+        },
+        {
+          "title": "Understanding the mechanism by which CD4+ T cells sensitize quasi-mesenchymal sgCD73 tumors to anti-CTLA4 checkpoint blockade therapy",
+          "citation": "Feng, B., Sams, C., O'Connell, I., Chandraganti, S., Sahoo, S., Jolly, M. K., and Dongre, A."
+        },
+        {
+          "title": "Harnessing epithelial-mesenchymal plasticity in breast cancer to potentiate the effects of immunotherapy",
+          "citation": "Nelissen, S., Salih, L., Chandraganti, S., O'Connell, I., and Dongre, A."
+        }
+      ]
+    }
+  ],
+  "presentations": {
+    "title": "Selected presentations",
+    "items": [
+      "Intercampus Cancer Metabolism Symposium, Cornell University, 2025",
+      "24th Annual Biomedical and Biological Sciences Symposium, Cornell University, 2025",
+      "TEMTIA 11, Seattle, 2024",
+      "Biomedical and Biological Science Recruitment Poster Sessions, Cornell University, 2023-2025"
+    ]
+  }
+}

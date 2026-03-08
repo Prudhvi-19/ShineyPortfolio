@@ -1,0 +1,54 @@
+{
+  "section": {
+    "eyebrow": "Research",
+    "title": "Selected research",
+    "intro": "My recent work has focused on how tumor state influences immune recognition and response to immunotherapy, especially in breast and lung cancer models."
+  },
+  "featured": {
+    "kicker": "Cornell University · Current work",
+    "title": "CD4+ T cells and response to anti-CTLA4 therapy in quasi-mesenchymal breast tumors",
+    "summary": "At Cornell, I am investigating why CD73-deficient quasi-mesenchymal breast tumors, which are otherwise refractory, become sensitive to anti-CTLA4 immune checkpoint blockade. I use depletion models, complementary knockout strategies, and 14-color flow cytometry to test which immune populations drive response. This work has supported a central role for CD4+ T-helper cells in tumor regression.",
+    "tags": [
+      "CD4-KO / CD8-KO / MHC-II-KO models",
+      "CRISPR/Cas9 double knockouts",
+      "14-color flow cytometry",
+      "Orthotopic implantation",
+      "Rechallenge studies"
+    ]
+  },
+  "cards": [
+    {
+      "kicker": "Cornell University · Collaboration",
+      "title": "Lipid metabolism and epithelial-mesenchymal plasticity",
+      "summary": "In collaborative work on SCD1 and lipid desaturation, I examine how metabolic state influences epithelial-mesenchymal plasticity and, in turn, immune recognition. This project has helped me think more mechanistically about how tumor identity and therapeutic susceptibility move together.",
+      "tags": [
+        "Western blot",
+        "Cytoplasmic immunofluorescence",
+        "Mammary fat pad implantation",
+        "Metastatic models"
+      ]
+    },
+    {
+      "kicker": "NYU Langone Health · Prior work",
+      "title": "Spatial immune architecture in lung tumors",
+      "summary": "At NYU Langone, I studied tumor-associated macrophages and the spatial organization of immune cells within lung tumors. Using multiplex immunofluorescence, confocal microscopy, and image analysis, I explored how tissue architecture may relate to therapeutic response.",
+      "tags": [
+        "Cryosectioning",
+        "Multiplex immunofluorescence",
+        "Confocal microscopy",
+        "ImageJ / Imaris"
+      ]
+    },
+    {
+      "kicker": "Interdisciplinary foundation",
+      "title": "Earlier training across microbial systems, public health, and computational work",
+      "summary": "Before focusing on cancer immunology, my work included microbial fuel cells, biomaterials, computational inhibitor screening, maternal health study coordination, and microbiome-oriented analysis. That background still shapes how I think about systems, variability, and translation.",
+      "tags": [
+        "Microbial fuel cells",
+        "Biomaterials",
+        "Virtual screening",
+        "Clinical study coordination"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "section": {
+    "eyebrow": "Timeline",
+    "title": "My research path, from current work back to where I started.",
+    "intro": "This timeline starts with my current work at Cornell and moves backward through the experiences that shaped how I think about biology, disease, and translation."
+  },
+  "entries": [
+    {
+      "date": "2023 - Present",
+      "title": "Cornell University",
+      "meta": "Lab Technician III · Department of Biomedical Sciences",
+      "description": "I study breast cancer immunology, tumor plasticity, and response to checkpoint blockade, with a current focus on CD4+ T-cell function in CD73-deficient quasi-mesenchymal tumors."
+    },
+    {
+      "date": "2022 - 2023",
+      "title": "NYU Langone Health and NYU School of Global Public Health",
+      "meta": "Graduate Research Student and Graduate Research Assistant",
+      "description": "I worked on spatial immune organization in lung tumors and supported clinical study coordination, participant recruitment, and data collection in maternal health research."
+    },
+    {
+      "date": "2021 - 2023",
+      "title": "New York University",
+      "meta": "M.S. in Biotechnology and Entrepreneurship",
+      "description": "My master's training strengthened my interest in translational biology and gave me research exposure across immunology, public health, and computational work."
+    },
+    {
+      "date": "2020",
+      "title": "MNNIT Allahabad",
+      "meta": "Senior thesis in computational inhibitor discovery",
+      "description": "I used virtual screening, molecular docking, and pharmacokinetic analysis to identify potential inhibitors in Gram-negative bacterial secretion systems."
+    },
+    {
+      "date": "2019",
+      "title": "IIT Guwahati",
+      "meta": "Research internship in biomaterials",
+      "description": "I worked on the synthesis and characterization of methyl acrylamide cellulose nanowhiskers for environmental applications."
+    },
+    {
+      "date": "2018",
+      "title": "Aurobindo Pharma",
+      "meta": "Pharmaceutical internship",
+      "description": "I gained early exposure to translational biology, quality workflows, and how bench science connects to therapeutic production."
+    },
+    {
+      "date": "2016 - 2017",
+      "title": "MNNIT Allahabad",
+      "meta": "Early research in microbial fuel cells",
+      "description": "My first research project examined how environmental conditions influence microbial fuel-cell performance, which is where my interest in biological systems and context began."
+    }
+  ]
+}
