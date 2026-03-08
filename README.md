@@ -40,6 +40,11 @@ Then open `http://localhost:4173`.
 
 Because the site loads content from JSON files, opening `index.html` directly with `file://` is not recommended.
 
+## GitHub Pages
+
+- GitHub Pages deployment workflow: `.github/workflows/deploy-pages.yml`
+- The site deploys from pushes to `main`
+
 ## Notes
 
 - The current public download is only the CV.

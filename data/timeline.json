@@ -8,7 +8,7 @@
     {
       "date": "2023 - Present",
       "title": "Cornell University",
-      "meta": "Lab Technician III · Department of Biomedical Sciences",
+      "meta": "Lab Technician III \u00b7 Department of Biomedical Sciences",
       "description": "I study breast cancer immunology, tumor plasticity, and response to checkpoint blockade, with a current focus on CD4+ T-cell function in CD73-deficient quasi-mesenchymal tumors."
     },
     {
@@ -47,5 +47,16 @@
       "meta": "Early research in microbial fuel cells",
       "description": "My first research project examined how environmental conditions influence microbial fuel-cell performance, which is where my interest in biological systems and context began."
     }
-  ]
+  ],
+  "foundation": {
+    "eyebrow": "Foundation",
+    "title": "Earlier training across microbial systems, public health, and computational work",
+    "summary": "Before focusing on cancer immunology, my work included microbial fuel cells, biomaterials, computational inhibitor screening, maternal health study coordination, and microbiome-oriented analysis. That background still shapes how I think about systems, variability, and translation.",
+    "tags": [
+      "Microbial fuel cells",
+      "Biomaterials",
+      "Virtual screening",
+      "Clinical study coordination"
+    ]
+  }
 }

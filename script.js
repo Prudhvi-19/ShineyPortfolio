@@ -19,7 +19,7 @@ function escapeHtml(value) {
 
 function renderSectionHeading(section) {
   return `
-    <div class="section-heading">
+    <div class="section-heading" data-reveal>
       <p class="eyebrow">${escapeHtml(section.eyebrow)}</p>
       <h2>${escapeHtml(section.title)}</h2>
       ${section.intro ? `<p>${escapeHtml(section.intro)}</p>` : ''}
@@ -100,15 +100,17 @@ function renderBrand(site) {
 
 function renderHero(site) {
   document.getElementById('hero-copy').innerHTML = `
-    <p class="eyebrow">${escapeHtml(site.hero.eyebrow)}</p>
-    <h1>${escapeHtml(site.hero.headline)}</h1>
-    <p class="hero__lead">${escapeHtml(site.hero.lead)}</p>
-    <p class="hero__support">${escapeHtml(site.hero.support)}</p>
-    <div class="hero__actions">${renderActions(site.hero.actions)}</div>
+    <div data-reveal>
+      <p class="eyebrow">${escapeHtml(site.hero.eyebrow)}</p>
+      <h1>${escapeHtml(site.hero.headline)}</h1>
+      <p class="hero__lead">${escapeHtml(site.hero.lead)}</p>
+      <p class="hero__support">${escapeHtml(site.hero.support)}</p>
+      <div class="hero__actions">${renderActions(site.hero.actions)}</div>
+    </div>
   `;
 
   document.getElementById('hero-role').innerHTML = `
-    <article class="panel panel--dark">
+    <article class="panel panel--dark" data-reveal>
       <h2>${escapeHtml(site.currentRole.heading)}</h2>
       <p class="profile-card__title">${escapeHtml(site.currentRole.title)} · ${escapeHtml(site.currentRole.subtitle)}</p>
       <ul class="meta-list">
@@ -127,7 +129,7 @@ function renderHero(site) {
   `;
 
   document.getElementById('hero-stats').innerHTML = `
-    <article class="panel">
+    <article class="panel" data-reveal>
       <p class="eyebrow">${escapeHtml(site.stats.heading)}</p>
       <div class="metric-grid">
         ${site.stats.items
@@ -147,7 +149,7 @@ function renderHero(site) {
 
 function renderAbout(site) {
   document.getElementById('about-main').innerHTML = `
-    <div class="section-heading section-heading--compact">
+    <div class="section-heading section-heading--compact" data-reveal>
       <p class="eyebrow">${escapeHtml(site.about.eyebrow)}</p>
       <h2>${escapeHtml(site.about.title)}</h2>
       ${site.about.paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join('')}
@@ -166,7 +168,7 @@ function renderAbout(site) {
       }
 
       return `
-        <article class="content-card">
+        <article class="content-card" data-reveal>
           <h3>${escapeHtml(card.title)}</h3>
           ${content}
         </article>
@@ -179,7 +181,7 @@ function renderResearch(research) {
   const cards = research.cards
     .map(
       (card) => `
-        <article class="research-card">
+        <article class="research-card" data-reveal>
           <p class="kicker">${escapeHtml(card.kicker)}</p>
           <h3>${escapeHtml(card.title)}</h3>
           <p>${escapeHtml(card.summary)}</p>
@@ -192,7 +194,7 @@ function renderResearch(research) {
   document.getElementById('research-section').innerHTML = `
     ${renderSectionHeading(research.section)}
     <div class="research-layout">
-      <article class="research-feature">
+      <article class="research-feature" data-reveal>
         <p class="kicker">${escapeHtml(research.featured.kicker)}</p>
         <h3>${escapeHtml(research.featured.title)}</h3>
         <p>${escapeHtml(research.featured.summary)}</p>
@@ -207,7 +209,7 @@ function renderPublications(publications, site) {
   const groupsHtml = publications.groups
     .map(
       (group) => `
-        <article class="publication-card">
+        <article class="publication-card" data-reveal>
           <h3>${escapeHtml(group.title)}</h3>
           <div class="publication-list">
             ${group.items
@@ -234,7 +236,7 @@ function renderPublications(publications, site) {
 
   const documentCard = site.documents?.items?.length
     ? `
-        <article class="publication-sidebar-card">
+        <article class="publication-sidebar-card" data-reveal>
           <h3>${escapeHtml(site.documents.title)}</h3>
           ${renderLinkList(site.documents.items)}
         </article>
@@ -246,11 +248,11 @@ function renderPublications(publications, site) {
     <div class="publication-layout">
       <div class="publication-stack">${groupsHtml}</div>
       <aside class="publication-sidebar">
-        <article class="publication-sidebar-card">
+        <article class="publication-sidebar-card" data-reveal>
           <h3>${escapeHtml(publications.presentations.title)}</h3>
           ${renderBulletList(publications.presentations.items)}
         </article>
-        <article class="publication-sidebar-card">
+        <article class="publication-sidebar-card" data-reveal>
           <h3>Publication snapshot</h3>
           <div class="publication-summary">
             ${summary
@@ -278,7 +280,7 @@ function renderMethods(methods) {
       ${methods.groups
         .map(
           (group) => `
-            <article class="method-card">
+            <article class="method-card" data-reveal>
               <h3>${escapeHtml(group.title)}</h3>
               ${renderBulletList(group.items)}
             </article>
@@ -290,18 +292,30 @@ function renderMethods(methods) {
 }
 
 function renderTimeline(timeline) {
+  const foundationCard = timeline.foundation
+    ? `
+        <article class="content-card timeline-shell__card" data-reveal>
+          <p class="eyebrow">${escapeHtml(timeline.foundation.eyebrow)}</p>
+          <h3>${escapeHtml(timeline.foundation.title)}</h3>
+          <p>${escapeHtml(timeline.foundation.summary)}</p>
+          ${timeline.foundation.tags?.length ? renderChipList(timeline.foundation.tags) : ''}
+        </article>
+      `
+    : '';
+
   document.getElementById('timeline-section').innerHTML = `
     <div class="timeline-layout">
-      <div class="timeline-shell">
+      <div class="timeline-shell" data-reveal>
         <p class="eyebrow">${escapeHtml(timeline.section.eyebrow)}</p>
         <h2>${escapeHtml(timeline.section.title)}</h2>
         <p>${escapeHtml(timeline.section.intro)}</p>
+        ${foundationCard}
       </div>
       <div class="timeline-list">
         ${timeline.entries
           .map(
             (entry) => `
-              <article class="timeline-entry">
+              <article class="timeline-entry" data-reveal>
                 <div class="timeline-date">${escapeHtml(entry.date)}</div>
                 <div class="timeline-card">
                   <h3>${escapeHtml(entry.title)}</h3>
@@ -324,7 +338,7 @@ function renderMentorship(mentorship) {
       ${mentorship.cards
         .map(
           (card) => `
-            <article class="content-card">
+            <article class="content-card" data-reveal>
               <p class="eyebrow">${escapeHtml(card.eyebrow)}</p>
               <h3>${escapeHtml(card.title)}</h3>
               ${renderBulletList(card.items)}
@@ -338,7 +352,7 @@ function renderMentorship(mentorship) {
 
 function renderContact(site) {
   document.getElementById('contact-section').innerHTML = `
-    <div class="contact-shell">
+    <div class="contact-shell" data-reveal>
       <div>
         <p class="eyebrow">${escapeHtml(site.contact.eyebrow)}</p>
         <h2>${escapeHtml(site.contact.title)}</h2>
@@ -349,16 +363,11 @@ function renderContact(site) {
   `;
 }
 
-function setFooter(site) {
+function setFooter() {
   const year = document.getElementById('year');
-  const note = document.getElementById('footer-note');
 
   if (year) {
     year.textContent = new Date().getFullYear();
-  }
-
-  if (note) {
-    note.textContent = site.footer.note;
   }
 }
 
@@ -417,16 +426,63 @@ function setupNavigation() {
   });
 }
 
+function setupRevealAnimations() {
+  const elements = document.querySelectorAll('[data-reveal]');
+
+  if (!elements.length) {
+    return;
+  }
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    elements.forEach((element) => element.classList.add('is-visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.14,
+      rootMargin: '0px 0px -8% 0px'
+    }
+  );
+
+  elements.forEach((element, index) => {
+    const delay = `${(index % 6) * 55}ms`;
+    const rect = element.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.92) {
+      element.style.setProperty('--reveal-delay', '0ms');
+      element.classList.add('is-immediate');
+      element.classList.add('is-visible');
+    } else {
+      element.style.setProperty('--reveal-delay', delay);
+      observer.observe(element);
+    }
+  });
+}
+
 function restoreHashPosition() {
   if (!window.location.hash) {
     return;
   }
 
-  requestAnimationFrame(() => {
+  const jump = () => {
     const target = document.querySelector(window.location.hash);
     if (target) {
-      target.scrollIntoView();
+      target.scrollIntoView({ block: 'start' });
     }
+  };
+
+  requestAnimationFrame(() => {
+    jump();
+    setTimeout(jump, 80);
+    setTimeout(jump, 180);
   });
 }
 
@@ -458,9 +514,10 @@ async function loadSite() {
     renderTimeline(timeline);
     renderMentorship(mentorship);
     renderContact(site);
-    setFooter(site);
+    setFooter();
     setPersonSchema(site);
     setupNavigation();
+    setupRevealAnimations();
     restoreHashPosition();
   } catch (error) {
     renderError(error);
