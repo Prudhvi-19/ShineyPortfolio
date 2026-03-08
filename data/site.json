@@ -133,7 +133,15 @@
         "download": "Shiney-Chandraganti-CV.pdf",
         "style": "secondary"
       }
-    ]
+    ],
+    "qr": {
+      "title": "Scan to open the portfolio",
+      "caption": "",
+      "image": "assets/qr/shiney-portfolio-qr.svg",
+      "fallbackImage": "assets/qr/shiney-portfolio-qr.png",
+      "url": "https://Prudhvi-19.github.io/ShineyPortfolio/",
+      "showUrl": false
+    }
   },
   "footer": {
     "note": ""

@@ -351,14 +351,37 @@ function renderMentorship(mentorship) {
 }
 
 function renderContact(site) {
+  const qrCard = site.contact.qr
+    ? `
+        <aside class="contact-qr" data-reveal>
+          <div class="contact-qr__frame">
+            <img
+              src="${escapeHtml(site.contact.qr.image)}"
+              alt="QR code linking to the live Shiney Portfolio website"
+              width="220"
+              height="220"
+              loading="lazy"
+              onerror="this.onerror=null;this.src='${escapeHtml(site.contact.qr.fallbackImage || site.contact.qr.image)}';"
+            />
+          </div>
+          <h3>${escapeHtml(site.contact.qr.title)}</h3>
+          ${site.contact.qr.caption ? `<p>${escapeHtml(site.contact.qr.caption)}</p>` : ''}
+          ${site.contact.qr.showUrl ? `<a class="contact-qr__link" href="${escapeHtml(site.contact.qr.url)}" target="_blank" rel="noreferrer">${escapeHtml(site.contact.qr.url)}</a>` : ''}
+        </aside>
+      `
+    : '';
+
   document.getElementById('contact-section').innerHTML = `
-    <div class="contact-shell" data-reveal>
-      <div>
-        <p class="eyebrow">${escapeHtml(site.contact.eyebrow)}</p>
-        <h2>${escapeHtml(site.contact.title)}</h2>
-        <p>${escapeHtml(site.contact.body)}</p>
+    <div class="contact-shell">
+      <div class="contact-main" data-reveal>
+        <div>
+          <p class="eyebrow">${escapeHtml(site.contact.eyebrow)}</p>
+          <h2>${escapeHtml(site.contact.title)}</h2>
+          <p>${escapeHtml(site.contact.body)}</p>
+        </div>
+        <div class="contact-actions">${renderActions(site.contact.actions)}</div>
       </div>
-      <div class="contact-actions">${renderActions(site.contact.actions)}</div>
+      ${qrCard}
     </div>
   `;
 }
@@ -426,6 +449,17 @@ function setupNavigation() {
   });
 }
 
+function revealInViewElements() {
+  document.querySelectorAll('[data-reveal]').forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.92) {
+      element.style.setProperty('--reveal-delay', '0ms');
+      element.classList.add('is-immediate');
+      element.classList.add('is-visible');
+    }
+  });
+}
+
 function setupRevealAnimations() {
   const elements = document.querySelectorAll('[data-reveal]');
 
@@ -481,8 +515,14 @@ function restoreHashPosition() {
 
   requestAnimationFrame(() => {
     jump();
-    setTimeout(jump, 80);
-    setTimeout(jump, 180);
+    setTimeout(() => {
+      jump();
+      revealInViewElements();
+    }, 80);
+    setTimeout(() => {
+      jump();
+      revealInViewElements();
+    }, 180);
   });
 }
 
