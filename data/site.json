@@ -144,20 +144,30 @@
     }
   },
   "footer": {
-    "note": ""
+    "note": "Bench rigor, translational intent, and mentorship by design."
   },
   "seo": {
     "title": "Shiney Rashmitha Chandraganti | Cancer Immunology Researcher",
     "description": "Personal portfolio of Shiney Rashmitha Chandraganti, a cancer immunology researcher focused on tumor microenvironments, immune-cell behavior, and response to immunotherapy.",
-    "themeColor": "#241630"
+    "themeColor": "#102235"
   },
   "documents": {
-    "title": "Documents",
+    "title": "CV and research statements",
     "items": [
       {
         "label": "Curriculum Vitae",
         "href": "CV_ShineyChandraganti.pdf",
         "download": "Shiney-Chandraganti-CV.pdf"
+      },
+      {
+        "label": "Research Statement",
+        "href": "Research Statement_Shiney Chandraganti.pdf",
+        "download": "Shiney-Chandraganti-Research-Statement.pdf"
+      },
+      {
+        "label": "Personal Statement",
+        "href": "Personal Statement_Shiney Chandraganti.pdf",
+        "download": "Shiney-Chandraganti-Personal-Statement.pdf"
       }
     ]
   }

@@ -8,10 +8,28 @@
       name="description"
       content="Personal portfolio of Shiney Rashmitha Chandraganti, a cancer immunology researcher focused on tumor microenvironments, immune-cell behavior, and response to immunotherapy."
     />
-    <meta name="theme-color" content="#241630" />
+    <meta name="theme-color" content="#102235" />
+    <meta name="color-scheme" content="light" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Shiney Rashmitha Chandraganti | Cancer Immunology Researcher"
+    />
+    <meta
+      property="og:description"
+      content="Research portfolio focused on tumor microenvironment, CD4+ T-cell biology, and immunotherapy response."
+    />
+    <meta property="og:url" content="https://Prudhvi-19.github.io/ShineyPortfolio/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23241630'/%3E%3Ccircle cx='20' cy='20' r='6' fill='%238f6ac8'/%3E%3Ccircle cx='44' cy='20' r='6' fill='%23ffffff'/%3E%3Ccircle cx='20' cy='44' r='6' fill='%23ffffff'/%3E%3Ccircle cx='44' cy='44' r='6' fill='%238f6ac8'/%3E%3Cpath d='M20 20 44 44M44 20 20 44' stroke='%23f7f4fb' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230d1a2a'/%3E%3Ccircle cx='20' cy='20' r='7' fill='%235db8a6'/%3E%3Ccircle cx='44' cy='18' r='5' fill='%23f2ede3'/%3E%3Ccircle cx='44' cy='42' r='8' fill='%23df805d'/%3E%3Cpath d='M20 20C26 30 34 36 44 42' stroke='%23f2ede3' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M20 20C29 19 37 18 44 18' stroke='%235db8a6' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E"
     />
     <link rel="stylesheet" href="styles.css" />
     <script id="person-schema" type="application/ld+json"></script>
@@ -19,8 +37,13 @@
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-noise" aria-hidden="true"></div>
 
-    <header class="site-header">
+    <header class="site-header" data-header>
+      <div class="scroll-progress" aria-hidden="true">
+        <span id="progress-bar"></span>
+      </div>
+
       <div class="container header__inner">
         <a class="brand" href="#top" aria-label="Shiney Chandraganti home">
           <span class="brand__mark">SC</span>
@@ -30,16 +53,22 @@
           </span>
         </a>
 
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Toggle navigation"
+        >
           Menu
         </button>
 
         <nav class="site-nav" id="site-nav" aria-label="Primary">
-          <a href="#about">About</a>
+          <a href="#about">Profile</a>
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
           <a href="#methods">Methods</a>
-          <a href="#timeline">Timeline</a>
+          <a href="#timeline">Trajectory</a>
           <a href="#mentorship">Mentorship</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -48,49 +77,50 @@
 
     <main id="main">
       <section class="hero" id="top">
-        <div class="container hero__grid">
-          <div id="hero-copy" class="hero__copy loading-card">Loading content…</div>
-          <aside class="hero__aside">
-            <div id="hero-role" class="loading-card">Loading role…</div>
-            <div id="hero-stats" class="loading-card">Loading overview…</div>
-          </aside>
+        <div class="hero__backdrop" aria-hidden="true">
+          <span class="hero__glow hero__glow--one"></span>
+          <span class="hero__glow hero__glow--two"></span>
+          <span class="hero__glow hero__glow--three"></span>
+          <div class="hero__mesh"></div>
+        </div>
+
+        <div class="container hero__layout">
+          <div id="hero-copy" class="loading-card loading-card--hero">Loading profile…</div>
+          <div id="hero-panel" class="loading-card loading-card--hero">Loading research atlas…</div>
         </div>
       </section>
 
-      <section class="section section--tight" id="about">
-        <div class="container intro-grid">
-          <div id="about-main" class="loading-card">Loading about…</div>
-          <div id="about-side" class="side-stack">
-            <div class="loading-card">Loading details…</div>
-          </div>
+      <section class="section section--intro" id="about">
+        <div class="container" id="about-section">
+          <div class="loading-card">Loading profile…</div>
         </div>
       </section>
 
-      <section class="section section--tint" id="research">
+      <section class="section section--research" id="research">
         <div class="container" id="research-section">
           <div class="loading-card">Loading research…</div>
         </div>
       </section>
 
-      <section class="section" id="publications">
+      <section class="section section--publications" id="publications">
         <div class="container" id="publications-section">
           <div class="loading-card">Loading publications…</div>
         </div>
       </section>
 
-      <section class="section section--tint" id="methods">
+      <section class="section section--methods" id="methods">
         <div class="container" id="methods-section">
-          <div class="loading-card">Loading methods…</div>
+          <div class="loading-card loading-card--dark">Loading methods…</div>
         </div>
       </section>
 
-      <section class="section" id="timeline">
+      <section class="section section--timeline" id="timeline">
         <div class="container" id="timeline-section">
-          <div class="loading-card">Loading timeline…</div>
+          <div class="loading-card">Loading trajectory…</div>
         </div>
       </section>
 
-      <section class="section section--tint" id="mentorship">
+      <section class="section section--mentorship" id="mentorship">
         <div class="container" id="mentorship-section">
           <div class="loading-card">Loading mentorship…</div>
         </div>
@@ -98,7 +128,7 @@
 
       <section class="section section--contact" id="contact">
         <div class="container" id="contact-section">
-          <div class="loading-card">Loading contact…</div>
+          <div class="loading-card loading-card--contact">Loading contact…</div>
         </div>
       </section>
     </main>
@@ -106,12 +136,13 @@
     <footer class="site-footer">
       <div class="container footer__inner">
         <p>© <span id="year"></span> Shiney Rashmitha Chandraganti</p>
+        <p id="footer-note"></p>
       </div>
     </footer>
 
     <noscript>
       <div class="noscript-banner">
-        This site loads its content from JSON data files. Please enable JavaScript.
+        This portfolio loads its content from JSON data files. Please enable JavaScript.
       </div>
     </noscript>
   </body>
